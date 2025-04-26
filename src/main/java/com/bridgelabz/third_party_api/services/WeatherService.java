@@ -24,7 +24,8 @@ public class WeatherService implements IWeather {
 	public ResponseEntity<ResponseDTO> getWeatherByCity(String city) {
 
 
-		String api = "https://api.openweathermap.org/data/2.5/weather?q=" +city+ "&appid=3b6120103a2f219e04d2ca9168fd5c91&units=metric";
+		// Set your Weather API KEY
+		String api = "https://api.openweathermap.org/data/2.5/weather?q=" +city+ "&appid=API_KEY&units=metric";
 
 
 		try {

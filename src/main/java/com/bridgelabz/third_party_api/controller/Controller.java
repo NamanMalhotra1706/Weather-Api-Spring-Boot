@@ -3,6 +3,7 @@ package com.bridgelabz.third_party_api.controller;
 
 import com.bridgelabz.third_party_api.dtos.ResponseDTO;
 import com.bridgelabz.third_party_api.dtos.WeatherDTO;
+import com.bridgelabz.third_party_api.services.IWeather;
 import com.bridgelabz.third_party_api.services.WeatherService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +20,7 @@ public class Controller {
 
 
 	@Autowired
-	private WeatherService weatherService;
+	private IWeather weatherService;
 
 	@GetMapping
 	public String healthCheck() {
